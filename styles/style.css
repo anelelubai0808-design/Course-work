@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #f5e8d3, #e0f0f0);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 12px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background: #1abc9c;
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+.stats {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 15px 0 25px;
+  color: #2c3e50;
+}
+
+/* Форма */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+form input {
+  padding: 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.05rem;
+}
+
+form input:focus {
+  border-color: #1abc9c;
+  outline: none;
+}
+
+form button {
+  grid-column: span 2;
+  padding: 15px;
+  background: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background: #16a085;
+}
+
+/* Список книг */
+#bookList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.book-card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+/* Страница О проекте */
+.about-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content ul {
+  margin: 20px 0 20px 30px;
+}
+
+.about-content li {
+  margin: 10px 0;
+}

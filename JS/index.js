@@ -40,6 +40,10 @@ function showBooks() {
     list.appendChild(div);
   }
 }
-
+function deleteBook(index) {
+  books.splice(index, 1); // удаляем книгу из массива
+  localStorage.setItem("books", JSON.stringify(books)); // сохраняем
+  showBooks(); // перерисовываем список
+}
 // Запуск программы
 loadBooks();

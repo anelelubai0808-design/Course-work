@@ -39,21 +39,21 @@ formBook.addEventListener("submit", (e) => {
   genre.value = "";
 });
 
-// if (formBook) {
-//   formBook.onsubmit = function (e) {
-//     e.preventDefault();
+if (formBook) {
+  formBook.onsubmit = function (e) {
+    e.preventDefault();
 
-//     let title = document.getElementById("title").value;
-//     let author = document.getElementById("author").value;
+    let title = document.getElementById("title").value;
+    let author = document.getElementById("author").value;
 
-//     if (title && author) {
-//       books.push({ title: title, author: author });
-//       console.log(books);
-//       saveBooks();
-//       alert("Книга добавлена!");
-//       form.reset();
-//     } else {
-//       alert("Заполните название и автора!");
-//     }
-//   };
-// }
+    if (title && author) {
+      books.push({ title: title, author: author });
+      console.log(books);
+      saveBooks();
+      alert("Книга добавлена!");
+      form.reset();
+    } else {
+      alert("Заполните название и автора!");
+    }
+  };
+}
